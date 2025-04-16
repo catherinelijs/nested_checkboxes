@@ -1,0 +1,29 @@
+input[type="checkbox"].indeterminate::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+  transform: translate(-50%, -50%);
+  appearance: none;
+  -webkit-appearance: none;
+}
+input[type="checkbox"] {
+  margin: 0;
+  margin-left: 2px;
+  margin-top: -5px;
+  width: 20px;
+  height: 20px;
+  /* appearance: none;
+  -webkit-appearance: none; */
+  border: 2px solid #333;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: #333;
+  color: white;
+}
